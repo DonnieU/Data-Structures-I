@@ -8,14 +8,14 @@ class Stack {
   constructor() {
     this.stack = [];
   }
+  get size() {
+    return this.stack.length;
+  }
   push(element) {
     this.stack.push(element);
   }
   pop() {
     return this.stack.pop();
-  }
-  get size() {
-    return this.stack.length;
   }
 }
 
